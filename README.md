@@ -1,6 +1,6 @@
 # CoD WaW External Memory Patcher
 
-This is an external memory patcher for Call of Duty: World at War Zombies. It uses `WriteProcessMemory` to patch specific in-game instructions and variables at runtime.  
+This is an external memory patcher for Call of Duty: World at War Zombies. It shows a menu in cmd and patches specific in-game instructions and variables at runtime.  
 
 ---
 
@@ -22,16 +22,6 @@ This is an external memory patcher for Call of Duty: World at War Zombies. It us
 
 - Windows OS  
 - C++ compiler
-
----
-
-## How It Works
-
-- Finds the `CoDWaW.exe` process via `CreateToolhelp32Snapshot`
-- Opens a handle to the process with `PROCESS_ALL_ACCESS`
-- Uses `WriteProcessMemory` to:
-  - Patch instructions (with NOPs or opcodes)
-  - Write values directly to memory (e.g., health, money, weapon IDs)
 
 ---
 
